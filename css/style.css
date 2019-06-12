@@ -850,16 +850,33 @@ ul {
 /* Start About Area css
 =========================================================================================== */
 /* line 72, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+
+.mipito1{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items:center;
+}
+.mipito2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  
+}
 .about-area {
   background: url(../img/about/about-bg.png) no-repeat center;
   background-position: top center;
   padding-bottom: 80px;
+ 
+
 }
 
 @media (max-width: 991px) {
   /* line 72, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
   .about-area {
     padding-bottom: 10px;
+
   }
 }
 
@@ -1373,15 +1390,15 @@ ul {
 
 /* line 446, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
 .single_testi .testi_content h1 {
-  font-size: 42px;
-  line-height: 45px;
+  font-size: 58px;
+  line-height: 55px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 480px) {
   /* line 446, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
   .single_testi .testi_content h1 {
-    font-size: 34px;
+    font-size: 58px;
   }
 }
 
@@ -1408,7 +1425,7 @@ ul {
 /* line 469, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
 .single_testi .testi_author .a-desc p {
   margin-bottom: 0px;
-  font-size: 14px;
+  font-size: 34px;
 }
 
 /* End Testimonial Area

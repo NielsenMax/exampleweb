@@ -2,6 +2,7 @@
     "telemetry.machineId": "64c9018ee5c96ce453454f753242544a508abb6e4e5424355b75ebbf987d7c0a",
     "openedPathsList": {
         "workspaces3": [
+            "file:///home/alejo/Documents/TPBingo2019",
             "file:///var/www/html/exampleweb"
         ],
         "files2": []
@@ -44,6 +45,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alejo/Documents/TPBingo2019",
+                                        "path": "/home/alejo/Documents/TPBingo2019",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/TPBingo2019"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -1360,5 +1372,19 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/var/www/html"
+    "pickerWorkingDir": "/home/alejo/Documents",
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/alejo/Documents/TPBingo2019",
+            "backupPath": "/var/www/html/exampleweb/Backups/2d0f2aa5fe88cb6cd8179368873136f4",
+            "uiState": {
+                "mode": 0,
+                "x": 67,
+                "y": 55,
+                "width": 1213,
+                "height": 969
+            }
+        },
+        "openedWindows": []
+    }
 }
