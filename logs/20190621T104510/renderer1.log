@@ -1,0 +1,1 @@
+[2019-06-21 10:45:18.422] [renderer1] [error] Error: Error: ENOENT: no such file or directory, stat '/var/www/html/exampleweb/.vscode'
