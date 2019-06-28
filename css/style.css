@@ -976,13 +976,13 @@ ul {
 /* line 149, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
 .service-area {
   position: relative;
- 
+  margin-bottom: 120px;
 }
 
 @media (max-width: 991px) {
   /* line 149, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
   .service-area {
-    
+    margin-bottom: 70px;
   }
 }
 
