@@ -246,29 +246,29 @@ $thanks = "Gracias por tu consulta! Te contactaremos a la brevedad.";}
 
                         <div class="row">
                             <div class="col-12">
-                                <div class="form-group" <?php echo (!empty($subject_err)) ? 'has-error' : ''; ?>>
-                                        <span class="help-block" ><?php echo $subject_err; ?></span>
+                                <div  class="form-group" <?php echo (!empty($subject_err)) ? 'has-error' : ''; ?>>
+                                        <span style="color:red" ><?php echo $subject_err; ?></span>
                                     <input class="form-control" required name="subject" id="subject" type="text"
                                         placeholder="Ingrese un asunto">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group" <?php echo (!empty($message_err)) ? 'has-error' : ''; ?>>
-                                        <span class="help-block" ><?php echo $message_err; ?></span>
+                                        <span style="color:red" class="help-block" ><?php echo $message_err; ?></span>
                                     <textarea class="form-control w-100" required name="message" id="message" cols="30"
                                         rows="9" placeholder="Ingrese su consulta."></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                     <div class="form-group" <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>>
-                                            <span class="help-block" ><?php echo $name_err; ?></span>
+                                            <span style="color:red" class="help-block" ><?php echo $name_err; ?></span>
                                     <input class="form-control" required name="name" id="name" type="text"
                                         placeholder="Ingrese su nombre">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                     <div class="form-group" <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
-                                            <span class="help-block" ><?php echo $email_err; ?></span>
+                                            <span  style="color:red"class="help-block" ><?php echo $email_err; ?></span>
                                     <input class="form-control" required name="email" id="email" type="email"
                                         placeholder="Ingrese su direccion de correo electronico">
                                 </div>
@@ -277,7 +277,8 @@ $thanks = "Gracias por tu consulta! Te contactaremos a la brevedad.";}
                         <div class="form-group mt-2 mb-5 mb-lg-0">
                             <button type="submit" class="button button-contactForm main_btn">Enviar Mensage</button>
                         </div>
-                        <span class="help-block" ><?php echo $thanks; ?></span>
+                        <br>
+                        <span style="color:green; font-size: 30px;" class="help-block" ><?php echo $thanks; ?></span>
                     </form>
                 </div>
 
