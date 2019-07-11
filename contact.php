@@ -216,82 +216,84 @@ $thanks = "Gracias por tu consulta! Te contactaremos a la brevedad.";}
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
 
             </div>
-            <section id="contact"></section>
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="contact-title">Contactanos</h2>
-                </div>
-                <div class="col-lg-8">
-                    <form class="form-contact contact_form"
+            <section id="contact" >
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title">Contactanos</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <form class="form-contact contact_form"
                         action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" id="contactForm"
                         novalidate="novalidate" name="contactForm">
-
+                        
                         <div class="row">
                             <div class="col-12">
                                 <div  class="form-group" <?php echo (!empty($subject_err)) ? 'has-error' : ''; ?>>
                                         <span style="color:red" ><?php echo $subject_err; ?></span>
-                                    <input class="form-control" required name="subject" id="subject" type="text"
+                                        <input class="form-control" required name="subject" id="subject" type="text"
                                         placeholder="Ingrese un asunto">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group" <?php echo (!empty($message_err)) ? 'has-error' : ''; ?>>
+                                            <span style="color:red" class="help-block" ><?php echo $message_err; ?></span>
+                                            <textarea class="form-control w-100" required name="message" id="message" cols="30"
+                                            rows="9" placeholder="Ingrese su consulta."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group" <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>>
+                                                <span style="color:red" class="help-block" ><?php echo $name_err; ?></span>
+                                                <input class="form-control" required name="name" id="name" type="text"
+                                                placeholder="Ingrese su nombre">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group" <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
+                                                    <span  style="color:red"class="help-block" ><?php echo $email_err; ?></span>
+                                                    <input class="form-control" required name="email" id="email" type="email"
+                                                    placeholder="Ingrese su direccion de correo electronico">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-2 mb-5 mb-lg-0">
+                                            <button type="submit" class="button button-contactForm main_btn">Enviar Mensage</button>
+                                        </div>
+                                        <br>
+                                        <span style="color:green; font-size: 30px;" class="help-block" ><?php echo $thanks; ?></span>
+                                    </form>
+                                </div>
+                                
+                                <br>
+                                <div class="col-lg-4">
+                                    <div class="media contact-info">
+                                        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
+                                        <div class="media-body">
+                                            <h3>Rosario, Santa Fe.</h3>
+                                            <p>Caferatta 1272</p>
+                                        </div>
+                                    </div>
+                                    <div class="media contact-info">
+                                        <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
+                                        <div class="media-body">
+                                            <h3><a href="tel:454545654">+54 9 341 319 0725</a></h3>
+                                            <p>De Lunes a Viernes, de 9 a 18</p>
+                                        </div>
+                                    </div>
+                                    <div class="media contact-info">
+                                        <span class="contact-info__icon"><i class="fa fa-envelope-o"></i></span>
+                                        <div class="media-body">
+                                            <h3><a href="mailto:support@colorlib.com">contacto@constructoragonzalez.com</a></h3>
+                                            <p>Envianos tu duda!</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="form-group" <?php echo (!empty($message_err)) ? 'has-error' : ''; ?>>
-                                        <span style="color:red" class="help-block" ><?php echo $message_err; ?></span>
-                                    <textarea class="form-control w-100" required name="message" id="message" cols="30"
-                                        rows="9" placeholder="Ingrese su consulta."></textarea>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                    <div class="form-group" <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>>
-                                            <span style="color:red" class="help-block" ><?php echo $name_err; ?></span>
-                                    <input class="form-control" required name="name" id="name" type="text"
-                                        placeholder="Ingrese su nombre">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                    <div class="form-group" <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
-                                            <span  style="color:red"class="help-block" ><?php echo $email_err; ?></span>
-                                    <input class="form-control" required name="email" id="email" type="email"
-                                        placeholder="Ingrese su direccion de correo electronico">
-                                </div>
-                            </div>
                         </div>
-                        <div class="form-group mt-2 mb-5 mb-lg-0">
-                            <button type="submit" class="button button-contactForm main_btn">Enviar Mensage</button>
-                        </div>
-                        <br>
-                        <span style="color:green; font-size: 30px;" class="help-block" ><?php echo $thanks; ?></span>
-                    </form>
-                </div>
-
-                <br>
-                <div class="col-lg-4">
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
-                        <div class="media-body">
-                            <h3>Rosario, Santa Fe.</h3>
-                            <p>Caferatta 1272</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
-                        <div class="media-body">
-                            <h3><a href="tel:454545654">+54 9 341 319 0725</a></h3>
-                            <p>De Lunes a Viernes, de 9 a 18</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="fa fa-envelope-o"></i></span>
-                        <div class="media-body">
-                            <h3><a href="mailto:support@colorlib.com">contacto@constructoragonzalez.com</a></h3>
-                            <p>Envianos tu duda!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================ contact section end ================= -->
+                    </section>
+                </section>
+                    <!-- ================ contact section end ================= -->
 
     <!--================ Start CTA Area ================
   <section class="cta_area">
