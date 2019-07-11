@@ -78,50 +78,32 @@ $thanks = "Gracias por tu consulta! Te contactaremos a la brevedad.";}
 <body>
     <!--================Header Menu Area =================-->
     <header class="header_area">
-        <div class="top_menu d-lg-block d-none">
-            <div class="container">
-                <div class="float-left">
-                    <ul class="left_side">
-                        <li>
-                            <a href="login.html">
-                                <i class="fa fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="login.html">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="login.html">
-                                <i class="fa fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="login.html">
-                                <i class="fa fa-behance"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="float-right">
-                    <ul class="right_side">
-                        <li>
-                            <a href="login.html">
-                                <i class="lnr lnr-phone-handset"></i>
-                                012-6532-568-9746
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="lnr lnr-envelope"></i>
-                                emergency@colorlib.com
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="top_menu d-lg-block d-none">
+       <div class="container">
+        <div class="float-left">
+          <ul class="left_side">
+            
+            
+          </ul>
         </div>
+        <div class="float-right">
+          <ul class="right_side">
+            <li>
+              <a href="login.html">
+                <i class="lnr lnr-phone-handset"></i>
+                341 3888469
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="lnr lnr-envelope"></i>
+                exampleweb@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg w-100">
                 <div class="container">
